@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAg-xZ-wug">
-                                                    <rect key="frame" x="20" y="11" width="305" height="24"/>
+                                                    <rect key="frame" x="20" y="11" width="89" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="QRe-jb-DTA"/>
                                                     </constraints>
@@ -36,7 +36,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQK-TA-phf">
-                                                    <rect key="frame" x="333" y="25" width="41" height="20.5"/>
+                                                    <rect key="frame" x="353" y="25" width="41" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr6-eC-iTO">
                                                             <rect key="frame" x="0.0" y="0.0" width="21" height="20.5"/>
@@ -51,6 +51,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="41" id="anZ-XP-dQP"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vf-9C-dJg">
                                                     <rect key="frame" x="20" y="42" width="305" height="17"/>
@@ -65,12 +68,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1Vf-9C-dJg" firstAttribute="leading" secondItem="1vj-O0-nz6" secondAttribute="leadingMargin" id="DRM-Ns-81u"/>
-                                                <constraint firstItem="DQK-TA-phf" firstAttribute="leading" secondItem="KAg-xZ-wug" secondAttribute="trailing" constant="8" id="Mrf-5R-3NS"/>
+                                                <constraint firstItem="DQK-TA-phf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KAg-xZ-wug" secondAttribute="trailing" constant="8" id="Mrf-5R-3NS"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="1Vf-9C-dJg" secondAttribute="bottom" id="Nfv-ot-c9s"/>
                                                 <constraint firstItem="1Vf-9C-dJg" firstAttribute="top" relation="lessThanOrEqual" secondItem="KAg-xZ-wug" secondAttribute="bottom" constant="8" symbolic="YES" id="RHC-U0-CCw"/>
-                                                <constraint firstItem="DQK-TA-phf" firstAttribute="leading" secondItem="1Vf-9C-dJg" secondAttribute="trailing" constant="8" symbolic="YES" id="XeA-Pz-Ygs"/>
+                                                <constraint firstItem="DQK-TA-phf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Vf-9C-dJg" secondAttribute="trailing" constant="8" symbolic="YES" id="XeA-Pz-Ygs"/>
                                                 <constraint firstItem="KAg-xZ-wug" firstAttribute="top" secondItem="1vj-O0-nz6" secondAttribute="topMargin" id="h8x-Wa-V98"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="DQK-TA-phf" secondAttribute="trailing" id="hVm-BA-uMQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DQK-TA-phf" secondAttribute="trailing" id="hVm-BA-uMQ"/>
                                                 <constraint firstItem="KAg-xZ-wug" firstAttribute="leading" secondItem="1vj-O0-nz6" secondAttribute="leadingMargin" id="hic-wE-582"/>
                                                 <constraint firstItem="DQK-TA-phf" firstAttribute="centerY" secondItem="1vj-O0-nz6" secondAttribute="centerY" id="oWu-cL-Brs"/>
                                                 <constraint firstItem="DQK-TA-phf" firstAttribute="top" relation="lessThanOrEqual" secondItem="1vj-O0-nz6" secondAttribute="topMargin" constant="17" id="ypd-IB-Qpf"/>
